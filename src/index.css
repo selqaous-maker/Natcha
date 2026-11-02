@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Cinzel', serif;
+  --font-editorial: 'Playfair Display', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-arabic: 'Amiri', serif;
+  --color-gold-300: #F3E5AB;
+  --color-gold-400: #E5C378;
+  --color-gold-500: #B38A38;
+  --color-gold-600: #936B23;
+  --color-gold-700: #6D4C13;
+  --color-beige-50: #FDFAF5;
+  --color-beige-100: #F8F5EE;
+  --color-beige-200: #F0EAE0;
+  --color-beige-300: #E3D9C9;
+  --color-beige-400: #D0C3AF;
+  --color-noir-900: #1A1612;
+  --color-noir-800: #2C251F;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8F5EE;
+    color: #1E1915;
+  }
+  
+  h1, h2, h3, .font-cinzel {
+    font-family: var(--font-display);
+    letter-spacing: 0.04em;
+  }
+
+  .font-playfair {
+    font-family: var(--font-editorial);
+  }
+
+  [dir="rtl"] {
+    font-family: var(--font-arabic), var(--font-sans);
+  }
+}
+
+/* Custom luxury scrollbar for beige background */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F0EAE0;
+}
+::-webkit-scrollbar-thumb {
+  background: #D0C3AF;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B38A38;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #6B4912 0%, #B38A38 50%, #7A5314 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-badge-shimmer {
+  background: linear-gradient(135deg, #B38A38 0%, #D4AF37 50%, #996F26 100%);
+}

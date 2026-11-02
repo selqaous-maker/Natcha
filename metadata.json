@@ -1,0 +1,6 @@
+{
+  "name": "TiCHA Parfums | Haute Parfumerie & Signatures",
+  "description": "Boutique officielle TiCHA Parfums & Fragrances au Maroc. Découvrez notre collection de 55 signatures olfactives haute tenue dans nos 3 flacons d'exception : Blanc Satin, Bleu Nuit et Rouge Impérial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
